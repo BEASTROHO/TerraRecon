@@ -22,7 +22,6 @@ TerraRecon is a modular, autonomous rover designed for terrain mapping, object d
 ```
 TerraRecon/
 ├── README.md
-├── LICENSE
 ├── requirements.txt
 ├── rover_control/
 │   ├── motor_driver.py
