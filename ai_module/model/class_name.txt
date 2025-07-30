@@ -1,0 +1,6 @@
+person
+car
+rock
+tree
+obstacle
+animal
