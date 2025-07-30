@@ -39,9 +39,6 @@ TerraRecon/
 │   ├── navigation_node.py
 │   ├── sensor_fusion_node.py
 │   └── rf_comm_node.py
-├── docs/
-│   ├── architecture_diagram.png
-│   └── methodology.pdf
 └── config/
     ├── system_config.yaml
     └── calibration_data.json
