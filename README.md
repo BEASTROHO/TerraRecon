@@ -1,13 +1,103 @@
- --------------------------------🛰️ TerraRecon: Autonomous Terrain Reconnaissance Rover--------------------------------
- 
-TerraRecon is a compact, autonomous rover designed for terrain mapping and object detection in remote or hazardous environments. The system integrates GPS, LiDAR, IMU, and IR camera modules to enable real-time navigation, obstacle avoidance, and environmental analysis. Built with modular hardware and intelligent software, TerraRecon is suitable for applications ranging from disaster response to planetary exploration.
-The rover’s control architecture is developed in Python, with ROS nodes managing sensor fusion, navigation, and telemetry. GPS provides geolocation, while LiDAR and IMU data are combined to generate accurate terrain maps. An onboard IR camera captures visual data, which is processed using a lightweight YOLOv5 model for object detection. The AI module identifies terrain features and obstacles, allowing the rover to adjust its path dynamically.
-RF communication enables remote monitoring and control, transmitting telemetry data and receiving commands from a ground station. The system is designed for energy efficiency, powered by a solar-assisted battery unit to support extended missions.
-This repository includes all source code, configuration files, and documentation required to replicate or extend the project. Key directories include:
-- rover_control/: Motor drivers, sensor interfaces, and main controller
-- ai_module/: YOLOv5 inference and object detection utilities
-- ros_nodes/: ROS modules for navigation and sensor fusion
-- config/: System settings and calibration data
-- docs/: Architecture diagrams and technical documentation
-To get started, clone the repository and install dependencies using requirements.txt. Run the main controller to initiate autonomous operation.
-TerraRecon is released under the MIT License to encourage academic collaboration and open-source development. Contributions and forks are welcome.
+# 🛰️ TerraRecon
+
+**Autonomous Terrain Reconnaissance Rover**
+
+TerraRecon is a modular, autonomous rover designed for terrain mapping, object detection, and remote exploration in challenging environments. It integrates GPS, LiDAR, IMU, and IR camera modules with Python and ROS to deliver real-time navigation, sensor fusion, and AI-based vision. The system supports RF telemetry for remote control and monitoring, making it suitable for disaster response, planetary research, and autonomous scouting missions.
+
+---
+
+## 🚀 Features
+
+- **Autonomous Navigation** using GPS and sensor fusion
+- **Real-Time Object Detection** with YOLOv5
+- **Terrain Mapping** via LiDAR and IMU integration
+- **RF Communication** for remote telemetry and control
+- **Modular ROS Nodes** for scalable deployment
+- **Energy-Efficient Design** with solar-assisted power
+
+---
+
+## 📁 Project Structure
+
+```
+TerraRecon/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── rover_control/
+│   ├── motor_driver.py
+│   ├── imu_reader.py
+│   ├── lidar_processor.py
+│   ├── camera_stream.py
+│   └── main_controller.py
+├── ai_module/
+│   ├── yolov5_inference.py
+│   ├── object_detection_utils.py
+│   └── model/
+│       └── yolov5s.pt
+├── ros_nodes/
+│   ├── navigation_node.py
+│   ├── sensor_fusion_node.py
+│   └── rf_comm_node.py
+├── docs/
+│   ├── architecture_diagram.png
+│   └── methodology.pdf
+└── config/
+    ├── system_config.yaml
+    └── calibration_data.json
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/your-username/TerraRecon.git
+cd TerraRecon
+pip install -r requirements.txt
+```
+
+---
+
+## 🧠 Run the Rover
+
+```bash
+python rover_control/main_controller.py
+```
+
+To run individual modules:
+
+```bash
+python ai_module/yolov5_inference.py
+rosrun ros_nodes navigation_node.py
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## 📚 Citation
+
+If you're using TerraRecon for academic purposes, please cite:
+
+```
+Roho, "TerraRecon: Autonomous Terrain Reconnaissance Rover", IEEE Submission, 2025.
+```
+
+---
+
+## 🤝 Contributions
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to modify.
+
+---
+
+## 📬 Contact
+
+For questions or collaboration inquiries, reach out via GitHub or email hemamahendiran0@gmail.com .
+
+
