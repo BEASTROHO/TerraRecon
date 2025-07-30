@@ -1,0 +1,21 @@
+{
+  "imu_offsets": {
+    "accel_x": -0.02,
+    "accel_y": 0.01,
+    "accel_z": 0.98,
+    "gyro_x": 0.005,
+    "gyro_y": -0.003,
+    "gyro_z": 0.002
+  },
+  "lidar_alignment": {
+    "x_offset": 0.05,
+    "y_offset": 0.0,
+    "z_offset": 0.1
+  },
+  "camera_matrix": [
+    [620.0, 0.0, 320.0],
+    [0.0, 620.0, 240.0],
+    [0.0, 0.0, 1.0]
+  ],
+  "distortion_coefficients": [-0.2, 0.1, 0.0, 0.0, 0.0]
+}
