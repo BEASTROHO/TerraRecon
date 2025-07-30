@@ -1,0 +1,6 @@
+{
+  "model_name": "yolov5s",
+  "input_size": [640, 640],
+  "confidence_threshold": 0.5,
+  "source": "https://github.com/ultralytics/yolov5"
+}
