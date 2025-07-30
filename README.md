@@ -99,5 +99,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## 📬 Contact
 
 For questions or collaboration inquiries, reach out via GitHub or email hemamahendiran0@gmail.com .
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![ROS](https://img.shields.io/badge/ROS-Noetic-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 
